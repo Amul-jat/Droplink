@@ -1,0 +1,48 @@
+{
+    "name": "GPlink_Bot",
+    "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+    "keywords": [
+        "telegram",
+        "gplink"
+    ],
+    "website": "https://github.com/Mahesh0253/GPlink-bot",
+    "repository": "https://github.com/Mahesh0253/GPlink-bot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "7626510"
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "ca991bfa07a6ac45e6d5f374c84ab05c"
+        },
+        "API_KEY": {
+            "description": "https://droplink.co/member/tools/api",
+            "value": "8e41249f9706af6c5bf2a1acb1c0b5af3c6ddf84"
+        },
+        "CHANNEL": {
+            "description": "Your Backup channel link",
+            "value": "https://t.me/Desi_Bhabhi_Aunty_hot_Video"
+        },
+        "HOWTO": {
+            "description": "Your 'How to Download from Droplink' video link",
+            "value": "https://t.me/Desi_Bhabhi_Aunty_hot_Video/61"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
