@@ -89,7 +89,7 @@ async def multi_pdisk_up(ml_string):
     ml_string = ' \n'.join(list_string)
     new_ml_string = list(map(str, ml_string.split(" ")))
     #new_ml_string = [sub.replace('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41', 'https://t.me/Desi_Bhabhi_Aunty_hot_Video/61') for sub in new_ml_string]
-    new_ml_string = await remove_footer(new_ml_string)
+    new_ml_string = await remove_username(new_ml_string)
     new_join_str = "".join(new_ml_string)
 
     urls = re.findall(r'(https?://[^\s]+)', new_join_str)
