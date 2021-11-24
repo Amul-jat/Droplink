@@ -88,8 +88,8 @@ async def multi_pdisk_up(ml_string):
     list_string = ml_string.splitlines()
     ml_string = ' \n'.join(list_string)
     new_ml_string = list(map(str, ml_string.split(" ")))
-    #new_ml_string = [sub.replace('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41', 'https://t.me/Desi_Bhabhi_Aunty_hot_Video/61') for sub in new_ml_string]
-    new_ml_string = await remove_username(new_ml_string)
+    new_ml_string = [sub.replace('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41', 'https://t.me/Desi_Bhabhi_Aunty_hot_Video/61') for sub in new_ml_string]
+    #new_ml_string = await remove_footer(new_ml_string)
     new_join_str = "".join(new_ml_string)
 
     urls = re.findall(r'(https?://[^\s]+)', new_join_str)
@@ -111,7 +111,7 @@ async def multi_pdisk_up(ml_string):
         i += 1
 
     new_string = " ".join(new_ml_string)
-    return await addFooter(new_string)
+    #return await addFooter(new_string)
     return (new_string)
 
 async def new_pdisk_url(urls):
@@ -121,18 +121,19 @@ async def new_pdisk_url(urls):
         new_urls.append(await pdisk_up(i))
     return new_urls  
 
-async def remove_username(new_List):
+'''async def remove_footer(new_List):
     for i in new_List:
-        if('@' in i or 't.me' in i or 'https://bit.ly/abcd' in i or 'https://bit.ly/123abcd' in i or 'telegra.ph' in i):
-            new_List.remove(i)
-    return new_List
+        if('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41' in i):
+            i = i.replace("41","61")
+            #new_List.remove(i)
+    return new_List'''
   
-async def addFooter(str):
+'''async def addFooter(str):
     footer = """
     ━━━━━━━━━━━━━━━
 ⚙️ How to Download / Watch Online :""" + HOWTO + """
 ━━━━━━━━━━━━━━━
 ⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
-    return str + footer
+    return str + footer'''
         
 bot.run()
