@@ -1,12 +1,12 @@
 {
-    "name": "GPlink_Bot",
+    "name": "Droplink",
     "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
     "keywords": [
         "telegram",
         "gplink"
     ],
-    "website": "https://github.com/Mahesh0253/GPlink-bot",
-    "repository": "https://github.com/Mahesh0253/GPlink-bot",
+    "website": "https://github.com/Amul-jat/Droplink",
+    "repository": "https://github.com/Amul-jat/Droplink",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token",
@@ -26,11 +26,11 @@
         },
         "CHANNEL": {
             "description": "Your Backup channel link",
-            "value": "https://t.me/Desi_Bhabhi_Aunty_hot_Video"
+            "value": "Savita_Bhabhi_Comics_Free4u"
         },
         "HOWTO": {
             "description": "Your 'How to Download from Droplink' video link",
-            "value": "https://t.me/Desi_Bhabhi_Aunty_hot_Video/61"
+            "value": "https://youtu.be/x5VDDVO6xi0"
         }
     },
     "addons": [],
