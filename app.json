@@ -1,15 +1,12 @@
 {
-    "name": "mdisk dood droplink bot",
-    "description": "Upload on Mdisk/Doodstream...",
+    "name": "Droplink",
+    "description": "Telegram's best ALL-In-One Multi Purpose RoBot. Create your Fork now.",
     "keywords": [
         "telegram",
-        "Doodstream",
-        "shortner",
-        "mdisk",
         "droplink"
     ],
-    "website": "https://github.com/Amul-jat/mdisk-dood-droplink-bot",
-    "repository": "https://github.com/Amul-jat/mdisk-dood-droplink-bot",
+    "website": "https://github.com/Amul-jat/Droplink",
+    "repository": "https://github.com/Amul-jat/Droplink",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
@@ -27,21 +24,13 @@
             "description": "https://droplink.co/member/tools/api",
             "value": "8e41249f9706af6c5bf2a1acb1c0b5af3c6ddf84"
         },
-        "MDISK_API": {
-            "description": "Get this from https://t.me/VideoToolMoneyTreebot (must change)",
-            "value": "LaPZD1jIR55KygNxkP8e"
-        },
-        "DOODSTREAM_API_KEY": {
-            "description": "Get this from https://doodstream.com/api-docs (must change)",
-            "value": "66186ezt1oza1ar9unrsk"
-        },
         "CHANNEL": {
             "description": "Enter your telegram channel Username (must change and without @)",
-            "value": "Desi_bhabhi_Aunty_Hot_video"
+            "value": "Savita_Bhabhi_Comics_Free4u"
         },
         "HOWTO": {
             "description": "Your 'How to Download from Droplink' video link",
-            "value": "Desi_Bhabhi_Aunty_hot_Video/80"
+            "value": "https://youtu.be/x5VDDVO6xi0"
         }
     },
     "addons": [],
