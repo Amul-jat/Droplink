@@ -33,7 +33,7 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Pdisk Links, texts & images... Than I'll convert & replace all pdisk links with your pdisk links \nMessage me @kamdev07 For more help-**")
+        "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @kamdev07 For more help-**")
 
 @bot.on_message(filters.command('support') & filters.private)
 async def start(bot, message):
@@ -71,14 +71,14 @@ async def pdisk_uploader(bot, message):
         await message.reply(f'Error: {e}', quote=True)
     
 async def pdisk_up(link):
-    if ('pdisk' in link or 'kuklink' in link or 'kofilink' in link or 'cofilink' in link or 'bit' in link or 'vdshort' in link or 'vidrivers' in link or 'dplinks' in link or 'wslinker' in link or 'cdinks' in link or 'dropxer' in link or 'droppx' in link):
+    if ('mega' in link 'google' in link or 'mdisk' in link or 'entertainvideo' in link or 'dood' in link or 'bit' in link ):
         url = 'https://droplink.co/api'
         params = {'api': API_KEY, 'url': link}
     
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
-                v_url =  data["shortenedUrl"]
+                v_url = """👉 """ data["shortenedUrl"]
     else:
         v_url = link
         
@@ -88,8 +88,7 @@ async def multi_pdisk_up(ml_string):
     list_string = ml_string.splitlines()
     ml_string = ' \n'.join(list_string)
     new_ml_string = list(map(str, ml_string.split(" ")))
-    new_ml_string = [sub.replace('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41', 'https://t.me/Desi_Bhabhi_Aunty_hot_Video/61') for sub in new_ml_string]
-    #new_ml_string = await remove_footer(new_ml_string)
+    new_ml_string = await remove_username(new_ml_string)
     new_join_str = "".join(new_ml_string)
 
     urls = re.findall(r'(https?://[^\s]+)', new_join_str)
@@ -121,19 +120,21 @@ async def new_pdisk_url(urls):
         new_urls.append(await pdisk_up(i))
     return new_urls  
 
-'''async def remove_footer(new_List):
+async def remove_username(new_List):
     for i in new_List:
-        if('https://t.me/Desi_Bhabhi_Aunty_hot_Video/41' in i):
-            i = i.replace("41","61")
-            #new_List.remove(i)
-    return new_List'''
+        if('@' in i or 't.me' in i or 'https://bit.ly/abcd' in i or 'https://bit.ly/123abcd' in i or 'telegra.ph' in i):
+            new_List.remove(i)
+    return new_List
   
-'''async def addFooter(str):
-    footer = """
-    ━━━━━━━━━━━━━━━
-⚙️ How to Download / Watch Online :""" + HOWTO + """
-━━━━━━━━━━━━━━━
-⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
-    return str + footer'''
+async def addFooter(str):
+    footer = """🔆Also available on Telegram in private channel Directly🔆
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+#SavitaBhabhi #ComicVideo #Savita #Hindi #Sexy_voice #Kirtu #Savita_Bhabhi  #Crazydad #Momshelp #incest
+
+🔅How to Download - """ + HOWTO +
+"""📣 Provide By @""" + CHANNEL +
+"""🔊For all  Direct Comics folder lifetime Membership msg me on @Kamdev07 or Join- @vip_comics"""
+    return str + footer
         
 bot.run()
