@@ -130,7 +130,7 @@ async def addFooter(str):
     footer = """\n__🔆Also available on Telegram in private channel Directly🔆__
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-__#SavitaBhabhi #ComicVideo #Savita #Hindi #Sexy_voice #Kirtu #Savita_Bhabhi  #Crazydad #Momshelp #incest__
+__#SavitaBhabhi #ComicVideo #Savita #Hindi #Sexy_voice #Kirtu #Savita_Bhabhi #Velamma #Crazydad #Momshelp #incest__
 
 🔅How to Download -""" + HOWTO + """\n
 📣 Provide By @"""+ CHANNEL + """
