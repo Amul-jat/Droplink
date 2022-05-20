@@ -128,7 +128,7 @@ async def remove_username(new_List):
   
 async def addFooter(str):
     footer = """\n__🔆Also available on Telegram in private channel Directly🔆__
-
+https://t.me/+SxV_gUsb2mpkOTIx
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 __#SavitaBhabhi #ComicVideo #Savita #Hindi #Sexy_voice #Kirtu #Savita_Bhabhi #Velamma #Crazydad #Momshelp #incest__
 
